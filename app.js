@@ -46,8 +46,8 @@ app.use('/premium' , premiumFeaturesRoutes);
 app.use('/password',forgotPasswordRoutes)
 
 
-var DBName = 'expenses'
-const connectionString = `mongodb+srv://vadlamudipradeep2000:02062000@cluster0.99ucuts.mongodb.net/${DBName}`
+
+const connectionString = process.env.MONGODB;
 
 mongoose.connect(connectionString)
 .then(result=>{

@@ -6,8 +6,9 @@ const User = require('../models/user')
 const purchasePremium =async (req, res) => {
     try {
         var rzp = new Razorpay({
-            key_id: 'rzp_test_xw5WaCAIT4N4sC',
-            key_secret: 'iBKrTkM6fM3A3K0I9XPky1gx'
+            key_id:process.env.RAZORPAY_KEY_ID ,
+            key_secret: process.env.RAZORPAY_KEY_SECRET,
+            
         })
         const amount = 10000;
 
