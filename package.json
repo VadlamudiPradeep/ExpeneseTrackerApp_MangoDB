@@ -1,0 +1,41 @@
+{
+  "name": "expenses_tracker_nodejs_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "start-server": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@azure/storage-blob": "^12.12.0",
+    "@sendgrid/mail": "^7.7.0",
+    "aws-sdk": "^2.1343.0",
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-paginate": "^1.0.2",
+    "googleapis": "^114.0.0",
+    "helmet": "^6.0.1",
+    "jsonwebtoken": "^9.0.0",
+    "md5": "^2.3.0",
+    "mongodb": "^5.1.0",
+    "mongoose": "^7.0.3",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.1.2",
+    "nodemailer": "^6.9.1",
+    "nodemon": "^2.0.20",
+    "sequelize": "^6.28.0",
+    "string": "^3.3.3",
+    "uuid": "^9.0.0"
+  },
+  "dependencies": {
+    "razorpay": "^2.8.6"
+  }
+}

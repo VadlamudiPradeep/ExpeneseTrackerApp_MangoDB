@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense App</title>
+    <link rel="stylesheet" href="./expenses.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>Expense App</h2>
+      </nav>
+    </header>
+
+    <main>
+      <button id='logout' class="fa-solid fa-arrow-right-from-bracket">logout</button>
+      <form class="form" id="formId" action="#" onsubmit="saveToDB(event)">
+        <div class="form-control">
+          <label>Amount</label>
+          <input type="text" id="amount"  placeholder=" Amount ₹" /><br><br>
+          <label>Description</label>
+          <input type="text" id="description" placeholder="Enter Description" /><br><br>
+          <label>Category</label>
+          <select id="category">
+            <option value="Fuel">Fuel</option>
+            <option value="Food">Food</option>
+            <option value="Electricity">Electricity</option>
+            <option value="Movie">Movie</option>
+          </select><br><br>
+        </div>
+        <button type="submit">Add Expense</button>
+      </form><br>
+    
+      <ul id="expenseTracker"></ul>
+<div id="message"></div>
+
+
+     <button id="premium1">Buy Premium</button>
+     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+          
+<!-- Pagination -->
+      <ul id="list" class="list"></ul>      
+    <ul id="pagination" class="pagination"></ul>
+      <div class="box">
+        <div class="from-box">
+      
+          <ul id="leaderboard" ></ul>
+        </div>
+      </div>
+      <div class="pages-container"></div>
+      <div id="perPage">
+        <label for="rows"><b>Rows per page :</b></label>
+        <select name="rows" id="rows">
+          <option value="2">2</option>
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="50">50</option>
+          <option value="100">100</option>
+        </select>
+        <button id="setRows">Set</button>
+      </div>
+ 
+      <button onclick="download()" id="downloadExpenses">Download File</button>
+    
+    </main>
+
+    <!-- axios - for network call --> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js" integrity="sha512-QTnb9BQkG4fBYIt9JGvYmxPpd6TBeKp6lsUrtiVQsrJ9sb33Bn9s0wMQO9qVBFbPX3xHRAsBHvXlcsrnJjExjg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./expenses.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="box">
+        <div class="form">
+            <div class="form-container ">
+             <form action="#" onsubmit="signup(event)">
+                <h1>Create Account</h1>
+                <input id="name" type="text" placeholder="Name">
+			    <input id="email" type="text" placeholder="Email">
+                <input id="phone" type="phone" placeholder="Phone">
+			    <input id="password" type="password" placeholder="Password">
+			    <button id="sign-up-btn">Sign Up</button>
+                <a href="../Login/login.html">Existing User - Login</a>
+            </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.2/axios.min.js"
+     integrity="sha512-NCiXRSV460cHD9ClGDrTbTaw0muWUBf/zB/yLzJavRsPNUl9ODkUVmUHsZtKu17XknhsGlmyVoJxLg/ZQQEeGA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="signup.js"></script>
+</body>
+</html>
