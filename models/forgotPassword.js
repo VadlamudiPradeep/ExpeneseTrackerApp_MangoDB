@@ -1,6 +1,6 @@
 
 const mongoose = require('mongoose');
-const { UUID, UUIDV4 } = require('sequelize');
+
 const Schema = mongoose.Schema;
 
 const forgotpasswordSchema = new Schema({
